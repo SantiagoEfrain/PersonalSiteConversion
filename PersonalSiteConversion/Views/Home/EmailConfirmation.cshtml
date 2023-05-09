@@ -1,0 +1,84 @@
+﻿@model PersonalSiteConversion.Models.ContactViewModel
+
+@{
+    ViewData["Title"] = "Email Confirmation";
+}
+
+
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact section-show">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Thank your for your time,</h2>
+            <p>Email Sent</p>
+        </div>
+
+        <div class="row mt-2">
+
+
+
+            <div class="col-md-6 mt-5 mt-4 d-flex align-items-stretch">
+                <div class="info-box">
+                    <i class="bx bx-share-alt"></i>
+                    <h3>Social Profiles</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/efrain-santiago-b373a0268/" target="_blank" class="linkedin">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        
+
+    </div>
+</section><!-- End Contact Section -->
+
+
+@*<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Contact">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Subject" class="control-label"></label>
+                <input asp-for="Subject" class="form-control" />
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Message" class="control-label"></label>
+                <textarea asp-for="Message" class="form-control"></textarea>
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>*@
+
+@*<div>
+    <a asp-action="Index">Back to List</a>
+</div>*@
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        $('#header').addClass('header-top');
+    </script>
+
+}
